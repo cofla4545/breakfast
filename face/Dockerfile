@@ -28,4 +28,4 @@ COPY . /app/
 EXPOSE 5000
 
 # 컨테이너 시작 명령어 설정
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "face.app:app"]
