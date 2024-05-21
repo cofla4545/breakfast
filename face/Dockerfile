@@ -25,7 +25,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . /app/
 
 # 포트 설정
-EXPOSE 5003
+EXPOSE 5000
 
 # 컨테이너 시작 명령어 설정
-CMD ["python", "app.py"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
