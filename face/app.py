@@ -8,11 +8,6 @@ import imageblur
 import webcam
 
 app = Flask(__name__)
-app.config.update(
-    SERVER_NAME='127.0.0.1:5003',
-    APPLICATION_ROOT='/',
-    PREFERRED_URL_SCHEME='http'
-)
 socketio = SocketIO(app)
 
 # 파일 업로드를 위한 디렉토리 설정
