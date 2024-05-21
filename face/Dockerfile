@@ -1,5 +1,5 @@
 # 베이스 이미지 설정
-FROM python:3.9-slim-buster
+FROM python:3.8-slim-buster
 
 # 환경 변수 설정
 ENV PYTHONDONTWRITEBYTECODE=1
